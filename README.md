@@ -6,30 +6,28 @@
 
 **Purpose**
 
-The purpose of this example is to create a capsule that able to excute REST HTTP command over JSON server on localhost port 3000
+The purpose of this example is to create a capsule that able to execute REST HTTP command over JSON server
 
-  - json-server needs to run on localhost port 3000 as min.cheng$ ./json-server --watch json.db
-  - rgrok also needs to run as min.cheng$ ./ngrok http 3000
-  - the above 2 termial window should keep running
-  - inside capsule change localhost to the ngrok forwarding url
-  - actual REST https server will not require the above steps
+  - Run json-server on localhost port 3000 as ./json-server --watch json.db
+  - Run rgrok to forward localhost port 3000 as ./ngrok http 3000
+  - The above 2 termial windows should be keep running
+  - Inside capsule change localhost to the ngrok forwarding url
+  - Actual REST https server will not require the above steps
   - This example is written by Min Cheng. 
     
 **Before you start!**
 
-  - You will first need to create a Samsung account by navigating to https://bixbydevelopers.com/ and clicking on the "Login/Sign Up" button at the top right corner of the page. Once you have signed up, download the IDE to start creating the capsule.
-  - Install NODE JS first by downloading from offical website https://nodejs.org/en/download/
+  - Create a Samsung account and download Bixby IDE at https://bixbydevelopers.com/
+  - Install NODE JS by downloading from offical website https://nodejs.org/en/download/
   - Checkout gitHub repository and install json-server https://github.com/typicode/json-server
   - Follow instruction to start json-server https://itnext.io/using-json-server-to-create-a-restful-server-in-5-seconds-78b85ccf832b
-  - download ngrok excutable from ngrok.com (registration is required, may need to switch wifi)
-  - Ctrl-C terminates both process
+  - Download ngrok executable from ngrok.com (registration is required, may need to switch wifi)
 
 **Resources**
 
 Bixby Developer Resources:
   - Bixby Developer Center: https://bixbydevelopers.com/
   - Bixby Developer Support Help Center: https://support.bixbydevelopers.com/hc/en-us
-    - You may find the  FAQ section useful as it contains articles that provide insight into common pitfalls first-time developers may encounter.
 
 **Need Help?**
   - If you are stuck or need assistance, feel free to reach out to us. We are here to help you with any questions or point you to the right areas of the Bixby Developer Center or the Bixby Help Center. You can reach us by sending your questions via email to support@bixbydevelopers.com.

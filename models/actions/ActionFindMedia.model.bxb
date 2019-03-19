@@ -1,0 +1,11 @@
+action (ActionFindMedia) {
+  description (find media according to input)
+  type (Search)
+  collect {
+    input (media_id) {
+      type (TypeMediaID)
+      min (Optional) max (One)
+    }
+  }
+  output (StructMedia)
+}

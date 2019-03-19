@@ -1,0 +1,3 @@
+integer (TypeMediaID) {
+  description (integer media ID, starts at 1)
+}

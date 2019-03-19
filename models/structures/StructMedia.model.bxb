@@ -1,0 +1,11 @@
+structure (StructMedia) {
+  description (struct of media)
+  property (id) {
+    type (TypeMediaID)
+    min (Required) max (One)
+  }
+  property (name) {
+    type (TypeMediaName)
+    min (Required) max (One)
+  }
+}

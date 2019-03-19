@@ -1,0 +1,8 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (ActionFindMedia) {
+      accepted-inputs (media_id)
+      local-endpoint ("FindMedia.js")
+    }
+  }
+}

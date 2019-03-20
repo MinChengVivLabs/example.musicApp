@@ -1,0 +1,13 @@
+structure (StructGenre) {
+  description (structure of 'genre' table in db)
+  property (genreID) {
+    // id
+    type (TypeGenreID)
+    min (Required) max (One)
+  }
+  property (genreName) {
+    // Name
+    type (TypeGenreName)
+    min (Required) max (One)
+  }
+}

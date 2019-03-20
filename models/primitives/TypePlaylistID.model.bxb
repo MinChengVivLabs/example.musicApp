@@ -1,0 +1,3 @@
+integer (TypePlaylistID) {
+  description (playlist.id in db, starts at 1)
+}

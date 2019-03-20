@@ -1,0 +1,18 @@
+structure (StructAlbum) {
+  description (struct of 'album' table in db)
+  property (albumID) {
+    // id
+    type (TypeAlbumID)
+    min (Required) max (One)
+  }
+  property (albumTitle) {
+    // Title
+    type (TypeAlbumTitle)
+    min (Required) max (One)
+  }
+  property (artistId) {
+    // ArtistId
+    type (TypeArtistID)
+    min (Required) max (One)
+  }
+}

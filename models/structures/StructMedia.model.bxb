@@ -1,10 +1,12 @@
 structure (StructMedia) {
-  description (struct of media)
-  property (id) {
+  description (structure of 'mediatype' table in db)
+  property (mediaID) {
+    // id
     type (TypeMediaID)
     min (Required) max (One)
   }
-  property (name) {
+  property (mediaName) {
+    // Name
     type (TypeMediaName)
     min (Required) max (One)
   }

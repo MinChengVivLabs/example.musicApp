@@ -1,0 +1,13 @@
+structure (StructArtist) {
+  description (struct of 'artist' table in db)
+  property (artistID) {
+    // id
+    type (TypeArtistID)
+    min (Required) max (One)
+  }
+  property (artistName) {
+    // Name
+    type (TypeArtistName)
+    min (Required) max (One)
+  }
+}

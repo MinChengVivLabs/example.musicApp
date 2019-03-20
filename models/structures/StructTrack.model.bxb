@@ -1,0 +1,55 @@
+structure (StructTrack) {
+  description (structure of 'track' table in db)
+  property (trackID) {
+    // id
+    type (TypeTrackID)
+    min (Required) max (One)
+  }
+  property (trackName) {
+    // Name
+    type (TypeTrackName)
+    min (Required) max (One)
+  }
+  property (albumID) {
+    // AlbumId
+    type (TypeAlbumID)
+    min (Required) max (One)
+  }
+  property (mediaID) {
+    // MediaTypeId
+    type (TypeMediaID)
+    min (Required) max (One)
+  }
+  property (genreID) {
+    // GenreId
+    type (TypeGenreID)
+    min (Required) max (One)
+  }
+  property (composer) {
+    // Composer
+    type (TypeTrackComposer)
+    min (Required) max (One)
+  }
+  property (milliseconds) {
+    // Milliseconds
+    type (TypeTrackMilliseconds)
+    min (Required) max (One)
+  }
+  property (bytes) {
+    // Bytes
+    type (TypeTrackBytes)
+    min (Required) max (One)
+  }
+  property (unitPrice) {
+    // UnitPrice
+    type (TypeTrackUnitPrice)
+    min (Required) max (One)
+  }
+}
+
+
+
+
+
+
+

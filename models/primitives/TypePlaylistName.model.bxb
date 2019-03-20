@@ -1,0 +1,3 @@
+name (TypePlaylistName) {
+  description (playlist.Name in db)
+}

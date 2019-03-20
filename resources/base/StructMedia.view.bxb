@@ -1,0 +1,45 @@
+result-view {
+  match {
+    StructMedia(this)
+  }
+  message {
+    if (size(this) == 0) {
+      template ("Sorry, I found nothing.")
+    }
+    else {
+      template ("Enjoy these: ")
+    }
+  }
+  render {
+    if (size(this) == 1){
+      layout {
+        section {
+          content {
+            single-line {
+              text {
+                value("Media ID: #{value(this.mediaID)}")
+                style(Detail_L)
+              }
+            }
+            single-line {
+              text {
+                value("Media Name: #{value(this.mediaName)}")
+                style(Detail_L)
+              }
+            }
+          }
+        }
+      }
+    }
+    else {
+      list-of (this) {
+        where-each (item) {
+          paragraph {
+            value("#{value(item.mediaID)}: #{value(item.mediaName)}")
+            style(Detail_L)
+          }
+        }
+      }
+    }    
+  }
+}

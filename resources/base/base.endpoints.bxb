@@ -4,5 +4,9 @@ endpoints {
       accepted-inputs (media_id)
       local-endpoint ("FindMedia.js")
     }
+    action-endpoint (ActionFindFieldCount) {
+      accepted-inputs (strFieldName)
+      local-endpoint ("FindFieldCount.js")
+    }
   }
 }

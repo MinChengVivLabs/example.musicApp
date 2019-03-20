@@ -11,7 +11,7 @@ The purpose of this example is to create a capsule that able to execute REST HTT
   - Run json-server on localhost port 3000 as ./json-server --watch json.db
   - Run rgrok to forward localhost port 3000 as ./ngrok http 3000
   - The above 2 termial windows should be keep running
-  - Inside capsule change localhost to the ngrok forwarding url
+  - Inside capsule change localhost to the ngrok forwarding url (CHANGES after restart rgrok)
   - Actual REST https server will not require the above steps
   - This example is written by Min Cheng. 
     

@@ -1,0 +1,3 @@
+integer (TypeAlbumID) {
+  description (album.id in db, starts at 1)
+}

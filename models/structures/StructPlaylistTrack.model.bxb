@@ -1,0 +1,14 @@
+structure (StructPlaylistTrack) {
+  description (structure of 'playlisttrack' table in db)
+  property (playlistID) {
+    // id
+    // note the difference here, db name 'id' is not that clear
+    type (TypePlaylistID)
+    min (Required) max (One)
+  }
+  property (trackID) {
+    // TrackId
+    type (TypeTrackID)
+    min (Required) max (One)
+  }
+}

@@ -1,0 +1,3 @@
+integer (TypeFieldCount) {
+  description (an integer count on json field)
+}

@@ -1,0 +1,3 @@
+integer (TypeGenreID) {
+  description (genre.id in db, starts at 1)
+}

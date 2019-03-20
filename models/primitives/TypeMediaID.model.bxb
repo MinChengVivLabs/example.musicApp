@@ -1,3 +1,3 @@
 integer (TypeMediaID) {
-  description (integer media ID, starts at 1)
+  description (mediatype.id in db, starts at 1)
 }

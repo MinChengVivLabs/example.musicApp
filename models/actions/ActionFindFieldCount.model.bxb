@@ -1,0 +1,11 @@
+action (ActionFindFieldCount) {
+  description (return count of input json field, 0 if not found)
+  type (Search)
+  collect {
+    input (strFieldName) {
+      type (TypeFieldName)
+      min (Required) max (One)
+    }
+  }
+  output (TypeFieldCount)
+}

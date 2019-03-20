@@ -1,0 +1,11 @@
+action (ActionFindAlbum) {
+  description (find album according to id, if no id, list all entry)
+  type (Search)
+  collect {
+    input (album_id) {
+      type (TypeAlbumID)
+      min (Optional) max (One)
+    }
+  }
+  output (StructAlbum)
+}

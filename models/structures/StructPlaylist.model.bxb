@@ -1,0 +1,18 @@
+structure (StructPlaylist) {
+  description (structure of 'playlist' table in db)
+  property (playlistID) {
+    // id
+    type (TypePlaylistID)
+    min (Required) max (One)
+  }
+  property (playlistName) {
+    // Name
+    type (TypePlaylistName)
+    min (Required) max (One)
+  }
+  property (track) {
+    // added when requesting specific playlistID 
+    type (StructTrack)
+    min (Optional) max (Many)
+  }
+}

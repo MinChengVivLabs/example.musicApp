@@ -1,0 +1,5 @@
+train (t-foc3lyy4yq6latv7ugvbie4h1) {
+  utterance ([g:ActionFindArtist] find all artist)
+  plan (Y2BikE2tSMwtyEnVyy0tzkx2LCjQCy4pKk0ucSwqySwuYVDEkHZMLsnMz3PLzEuBKmEEQgYoBpIA)
+  last-modified (1553105471219)
+}

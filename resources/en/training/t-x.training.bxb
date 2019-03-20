@@ -3,3 +3,8 @@ train (t-xba0bdna7zquh4hsqbslpfni2) {
   plan (Y2BmkEmtSMwtyEnVyy0tzkx2LCjQCy4pKk0u8U1NyUxkUMCQdUwuyczPc8vMS4GowNQfUlmQCpbzdGFgYmAEYgYgycgAAlA+AA==)
   last-modified (1552949616093)
 }
+train (t-xkq0bvu9eyubx4o3u31an9v3s) {
+  utterance ("[g:ActionFindPlaylist] find playlist (15)[v:TypePlaylistID]")
+  plan (Y2BmkE+tSMwtyEnVyy0tzkx2LCjQCy4pKk0uCchJrMzJLC5hUMZQ4Jhckpmf55aZlwJXhGlKSGVBKkza04WBiYERiBmAJCMDCED5AA==)
+  last-modified (1553123360932)
+}

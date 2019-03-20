@@ -1,0 +1,5 @@
+train (t-5njvrnf5r4uevvkhxyknlhxme) {
+  utterance ("[g:ActionFindArtist] find artist (17)[v:TypeArtistID]")
+  plan (Y2BmkE2tSMwtyEnVyy0tzkx2LCjQCy4pKk0ucSwqySwuYVDEkHZMLsnMz3PLzEuBKsE0IaSyIBUi6enCwMTACMQMQJKRAQSgfAA=)
+  last-modified (1553105515106)
+}

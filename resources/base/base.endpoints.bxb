@@ -1,12 +1,36 @@
 endpoints {
   action-endpoints {
+    action-endpoint (ActionFindFieldCount) {
+      accepted-inputs (strFieldName)
+      local-endpoint ("FindFieldCount.js")
+    }
     action-endpoint (ActionFindMedia) {
       accepted-inputs (media_id)
       local-endpoint ("FindMedia.js")
     }
-    action-endpoint (ActionFindFieldCount) {
-      accepted-inputs (strFieldName)
-      local-endpoint ("FindFieldCount.js")
+    action-endpoint (ActionFindGenre) {
+      accepted-inputs (genre_id)
+      local-endpoint ("FindGenre.js")
+    }
+    action-endpoint (ActionFindPlaylist) {
+      accepted-inputs (playlist_id)
+      local-endpoint ("FindPlaylist.js")
+    }
+    action-endpoint (ActionFindArtist) {
+      accepted-inputs (artist_id)
+      local-endpoint ("FindArtist.js")
+    }
+    action-endpoint (ActionFindAlbum) {
+      accepted-inputs (album_id)
+      local-endpoint ("FindAlbum.js")
+    }
+    action-endpoint (ActionFindPlaylistTrack) {
+      accepted-inputs (playlist_id)
+      local-endpoint ("FindPlaylistTrack.js")
+    }
+    action-endpoint (ActionFindTrack) {
+      accepted-inputs (track_id)
+      local-endpoint ("FindTrack.js")
     }
   }
 }

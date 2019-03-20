@@ -1,0 +1,11 @@
+action (ActionFindGenre) {
+  description (find genre according to id, if no id, list all entry)
+  type (Search)
+  collect {
+    input (genre_id) {
+      type (TypeGenreID)
+      min (Optional) max (One)
+    }
+  }
+  output (StructGenre)
+}

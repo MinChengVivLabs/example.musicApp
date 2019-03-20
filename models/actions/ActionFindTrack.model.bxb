@@ -1,0 +1,11 @@
+action (ActionFindTrack) {
+  description (find detailed track info according to id)
+  type (Search)
+  collect {
+    input (track_id) {
+      type (TypeTrackID)
+      min (Required) max (One)
+    }
+  }
+  output (StructTrack)
+}

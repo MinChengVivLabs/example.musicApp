@@ -1,0 +1,5 @@
+train (t-ltzbq894oub8fx3rrlmsdhcnp) {
+  utterance ("[g:ActionFindGenre] find genre (5)[v:TypeGenreID]")
+  plan (Y2BmkEmtSMwtyEnVyy0tzkx2LCjQCy4pKk0ucU/NK0plUMCQdUwuyczPc8vMS4GowNQfUlmQCpbzdGFgYmAEYgYgycgAAlA+AA==)
+  last-modified (1553105034998)
+}

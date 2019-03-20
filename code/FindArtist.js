@@ -1,18 +1,18 @@
-module.exports.function = function findMedia (media_id) {
+module.exports.function = function findArtist (artist_id) {
   var http = require('http')
   var GetBaseUrl = require('./lib/GetBaseUrl.js')
-  var url = GetBaseUrl.function() + 'MediaType/'
-  if (!media_id || media_id == 0) {
+  var url = GetBaseUrl.function() + 'artist/'
+  if (!artist_id || artist_id == 0) {
     var response = http.getUrl(url)
     var parsedResponse = JSON.parse(response)
     var rslt = []
     for (var i=0; i<parsedResponse.length; i++) {
-      rslt.push({mediaID: parsedResponse[i].id, mediaName: parsedResponse[i].Name,})
+      rslt.push({artistID: parsedResponse[i].id, artistName: parsedResponse[i].Name,})
     }
     return rslt;
   }
   else {
-    url += media_id.toString() + "/"
+    url += artist_id.toString() + "/"
     try {
       var response = http.getUrl(url)
       }
@@ -21,8 +21,8 @@ module.exports.function = function findMedia (media_id) {
     }
     var parsedResponse = JSON.parse(response)
     return {
-      mediaID: parsedResponse.id,
-      mediaName: parsedResponse.Name,
+      artistID: parsedResponse.id,
+      artistName: parsedResponse.Name,
     }
   }
 }

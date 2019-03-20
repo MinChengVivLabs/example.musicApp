@@ -10,7 +10,7 @@ structure (StructAlbum) {
     type (TypeAlbumTitle)
     min (Required) max (One)
   }
-  property (artistId) {
+  property (artistID) {
     // ArtistId
     type (TypeArtistID)
     min (Required) max (One)

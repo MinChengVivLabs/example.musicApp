@@ -1,0 +1,11 @@
+action (ActionFindPlaylistTrack) {
+  description (find a list of trackID by playlistID in 'Playlisttrack' table in db, this is different from the rest)
+  type (Search)
+  collect {
+    input (playlist_id) {
+      type (TypePlaylistID)
+      min (Required) max (One)
+    }
+  }
+  output (StructPlaylistTrack)
+}

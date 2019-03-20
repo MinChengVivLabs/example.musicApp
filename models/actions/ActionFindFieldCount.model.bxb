@@ -4,7 +4,7 @@ action (ActionFindFieldCount) {
   collect {
     input (strFieldName) {
       type (TypeFieldName)
-      min (Required) max (One)
+      min (Optional) max (One)
     }
   }
   output (TypeFieldCount)

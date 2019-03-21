@@ -1,3 +1,8 @@
+train (t-z1eh958edrtzqpjhh3eya31wf) {
+  utterance ("[g:ActionAddOne] create new media type (77)[v:TypeMediaID:77]")
+  plan (Y2BmkEytSMwtyEnVyy0tzkx2LCjQC6ksSA1JrShhkMWQckwuyczPc0xJ8c9LZZDBqtM3NSUz0dOFgYmBEYgZgCQjAwhA+QA=)
+  last-modified (1553192758737)
+}
 train (t-zmdm50mbm50k5vymhgnocxccn) {
   utterance ("[g:ActionFindAlbum] find album (1)[v:TypeAlbumID]")
   plan (Y2BmkEmtSMwtyEnVyy0tzkx2LCjQCy4pKk0uccxJKs1lUMCQdUwuyczPc8vMS4GowNQfUlmQCpbzdGFgYmAEYgYgycgAAlA+AA==)

@@ -1,0 +1,11 @@
+action (ActionAddOne) {
+  description (test add using POST)
+  type (Search)
+  collect {
+    input (id) {
+      type (TypeMediaID)
+      min (Optional) max (One)
+    }
+  }
+  output (TypeText)
+}

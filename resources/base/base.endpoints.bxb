@@ -32,5 +32,10 @@ endpoints {
       accepted-inputs (track_id)
       local-endpoint ("FindTrack.js")
     }
+    // test POST 
+    action-endpoint (ActionAddOne) {
+      accepted-inputs (id)
+      local-endpoint ("AddOne.js")
+    }
   }
 }

@@ -1,0 +1,3 @@
+text (TypeText) {
+  description (simple text string)
+}

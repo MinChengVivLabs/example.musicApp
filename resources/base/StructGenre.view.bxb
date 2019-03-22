@@ -1,13 +1,13 @@
 result-view {
   match {
-    StructMedia(this)
+    StructGenre(this)
   }
   message {
     if (size(this) == 0) {
       template ("Sorry, I found nothing.")
     }
     else-if (size(this)==1) {
-      template ("Found Media ID #{value(this.mediaID)}")
+      template ("Found Genre ID #{value(this.genreID)}")
     }
     else {
       template ("Found #{size(this)} Genre types")
@@ -18,10 +18,10 @@ result-view {
       where-each (item) {
         layout-macro (MacroList) {
           param (id) {
-            expression (item.mediaID)
+            expression (item.genreID)
           }
           param (name) {
-            expression (item.mediaName)
+            expression (item.genreName)
           }
         }
       }

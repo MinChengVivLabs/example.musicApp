@@ -1,0 +1,47 @@
+result-view {
+  match {
+    StructPlaylist(this)
+  }
+  message {
+    if (size(this) == 0) {
+      template ("Sorry, I found nothing.")
+    }
+    else-if (size(this)==1) {
+      template ("Found Playlist ID #{value(this.playlistID)}")
+    }
+    else {
+      template ("Found #{size(this)} Playlists")
+    }
+  }
+  render {
+    if (size(this)==1) {
+      // detailed playlist view with each track listed
+      list-of (this.track) {
+        title {
+          template ("Playlist ID #{value(this.playlistID)}: #{value(this.playlistName)}")
+        }
+        where-each (item) {
+          layout-macro (MacroListTrack) {
+            param (track) {
+              expression (item)
+            }
+          }
+        }
+      }
+    }
+    else {
+      list-of (this) {
+        where-each (item) {
+          layout-macro (MacroList) {
+            param (id) {
+              expression (item.playlistID)
+            }
+            param (name) {
+              expression (item.playlistName)
+            }
+          }
+        }
+      }
+    }
+  }
+}

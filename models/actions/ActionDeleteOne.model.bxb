@@ -1,0 +1,11 @@
+action (ActionDeleteOne) {
+  description (delete one media type record according to id)
+  type (Search)
+  collect {
+    input (id) {
+      type (TypeMediaID)
+      min (Required) max (One)
+    }
+  }
+  output (TypeText)
+}

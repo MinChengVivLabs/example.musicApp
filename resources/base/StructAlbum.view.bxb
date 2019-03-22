@@ -1,0 +1,51 @@
+result-view {
+  match {
+    StructAlbum(this)
+  }
+  message {
+    if (size(this) == 0) {
+      template ("Sorry, I found nothing.")
+    }
+    else-if (size(this)==1) {
+      template ("Found Album ID #{value(this.albumID)}")
+    }
+    else {
+      template ("Found #{size(this)} Albums")
+    }
+  }
+  render {
+    if (size(this)==1) {
+      // detailed playlist view with each track listed
+      layout {
+        section {
+          content {
+            single-line {
+              image {
+                url ("https://github.com/MinChengVivLabs/example.musicApp/blob/master/2C.jpg?raw=true")
+                style (Title_M)
+              }
+              text {
+                value ("#{value(this.albumTitle)}")
+                style (Detail_L)
+              }
+            }
+          }
+        }
+      }
+    }
+    else {
+      list-of (this) {
+        where-each (item) {
+          layout-macro (MacroList) {
+            param (id) {
+              expression (item.albumID)
+            }
+            param (name) {
+              expression (item.albumTitle)
+            }
+          }
+        }
+      }
+    }
+  }
+}

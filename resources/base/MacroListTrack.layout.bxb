@@ -1,0 +1,19 @@
+layout-macro-def (MacroListTrack){
+  params {
+    param (track) {
+      type (StructTrack)
+      min (Required) max (One)
+    }
+  }
+  content {
+    cell-card {
+      slot2 {
+        content {
+          primary {
+            template ("Track ID #{value(track.trackID)}: #{value(track.trackName)}")
+          }
+        }        
+      }
+    }
+  }
+}

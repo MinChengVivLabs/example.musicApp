@@ -1,0 +1,18 @@
+layout-macro-def (MacroList){
+  params {
+    param (id) {
+      type (TypeID)
+      min (Required) max (One)
+    }
+    param (name) {
+      type (TypeFieldName) 
+      min (Required) max (One)
+    }
+  }
+  content {
+    paragraph {
+      value ("ID #{value(id)}: #{value(name)}")
+      style (Detail_L)
+    }
+  }
+}

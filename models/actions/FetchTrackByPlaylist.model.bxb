@@ -1,0 +1,11 @@
+action (FetchTrackByPlaylist) {
+  description (return a list of track based on input playlist)
+  type(Fetch)
+  collect {
+    input (playlist) {
+      type (StructPlaylist)
+      min (Required) max (One)
+    }
+  }
+  output (StructTrack)
+}

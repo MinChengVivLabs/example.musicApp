@@ -1,0 +1,11 @@
+action (ActionGetArtistName) {
+  description (fetch artist name based on input id)
+  type (Fetch)
+  collect {
+    input (album) {
+      type (StructAlbum)
+      min (Optional) max (One)
+    }
+  }
+  output (TypeArtistName)
+}

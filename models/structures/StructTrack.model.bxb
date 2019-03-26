@@ -15,6 +15,12 @@ structure (StructTrack) {
     type (TypeAlbumID)
     min (Required) max (One)
   }
+  property (albumTitle) {
+    // fetch later 
+    type (TypeAlbumTitle)
+    lazy-source (ActionGetAlbumTitle)
+    min(Optional) max (Many)
+  }
   property (mediaID) {
     // MediaTypeId
     type (TypeMediaID)
@@ -28,7 +34,7 @@ structure (StructTrack) {
   property (composer) {
     // Composer
     type (TypeTrackComposer)
-    min (Required) max (One)
+    min (Optional) max (One)
   }
   property (milliseconds) {
     // Milliseconds

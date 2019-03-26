@@ -11,6 +11,7 @@ module.exports.function = function findAlbum (album_id) {
         albumID: parsedResponse[i].id,
         albumTitle: parsedResponse[i].Title,
         artistID: parsedResponse[i].ArtistId,
+        imageUrl: 'https://github.com/MinChengVivLabs/example.musicApp/blob/master/JPEG/'+ parsedResponse[i].id%10+ 'D.jpg?raw=true'
       }
       rslt.push(record)
     }
@@ -25,10 +26,22 @@ module.exports.function = function findAlbum (album_id) {
       return {}
     }
     var parsedResponse = JSON.parse(response)
-    return {
+    rslt = {
         albumID: parsedResponse.id,
         albumTitle: parsedResponse.Title,
         artistID: parsedResponse.ArtistId,
+        imageUrl: 'https://github.com/MinChengVivLabs/example.musicApp/blob/master/JPEG/'+ parsedResponse.id%10+ 'D.jpg?raw=true'
+//        artistName: null,
     }
+    url = GetBaseUrl.function() + 'Artist/' + rslt.artistID + '/'
+    try {
+      response = http.getUrl(url)
+      parsedResponse = JSON.parse(response)
+      rslt.artistName = parsedResponse.Name
+    }
+    catch (err) {
+      rslt.artistName = 'undefined artist'
+    }
+    return rslt; 
   }
 }

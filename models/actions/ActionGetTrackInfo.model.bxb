@@ -1,0 +1,15 @@
+action (ActionGetTrackInfo) {
+  description (return a list of tracks based on input object)
+  type (Search)
+  collect {
+    input (album) {
+      type (StructAlbum)
+      min (Optional) max (One)
+    }
+    input (album_id) {
+      type (TypeAlbumID)
+      min (Optional) max (One)
+    }
+  }
+  output (StructTrack)
+}

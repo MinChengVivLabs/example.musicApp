@@ -12,6 +12,7 @@ structure (StructPlaylist) {
   }
   property (track) {
     // added when requesting specific playlistID 
+    lazy-source (FetchTrackByPlaylist)
     type (StructTrack)
     min (Optional) max (Many)
   }

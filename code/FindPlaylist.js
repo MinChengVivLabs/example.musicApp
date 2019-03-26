@@ -33,17 +33,17 @@ module.exports.function = function findPlaylist (playlist_id) {
         trackID.push(json[i].TrackId)
     }
     // fetch and save detailed track info
-    var track = []
-    var GetTrack = require('./FindTrack.js')
-    for (var i=0; i<trackID.length; i++) {
+//    var track = []
+//    var GetTrack = require('./FindTrack.js')
+//    for (var i=0; i<trackID.length; i++) {
       // TODO: push each track info to tracks
-      track.push(GetTrack.function(trackID[i]))
-    }
+//      track.push(GetTrack.function(trackID[i]))
+//    }
     
     return {
       playlistID: playlistID,
       playlistName: playlistName,
-      track: track,
+//      track: track,
     }
   }
 }

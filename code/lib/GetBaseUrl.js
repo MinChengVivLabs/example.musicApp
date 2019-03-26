@@ -3,5 +3,5 @@ module.exports = {
 }
 
 function GetBaseUrl() {
-  return "http://66611e2c.ngrok.io/"    // this base url changes every time restart rgrok session
+  return "http://e40f9d29.ngrok.io/"    // this base url changes every time restart rgrok session
 }

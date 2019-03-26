@@ -32,15 +32,36 @@ endpoints {
       accepted-inputs (track_id)
       local-endpoint ("FindTrack.js")
     }
+    action-endpoint (ActionGetTrackInfo) {
+      accepted-inputs (album, album_id)
+      local-endpoint ("GetTrackName.js")
+    }
+    action-endpoint (ActionFindAlbumByArtist) {
+      accepted-inputs (artist_id)
+      local-endpoint ("FindAlbumByArtist.js")
+    }
+    // lazy property action 
+    action-endpoint (ActionGetArtistName) {
+      accepted-inputs (album)
+      local-endpoint ("GetArtistName.js")
+    }
+    action-endpoint (ActionGetAlbumTitle) {
+      accepted-inputs (track)
+      local-endpoint ("GetAlbumTitle.js")
+    }
+    action-endpoint (FetchTrackByPlaylist) {
+      accepted-inputs (playlist)
+      local-endpoint ("FetchTrackByPlaylist.js")
+    }
     // test POST 
-    action-endpoint (ActionAddOne) {
-      accepted-inputs (id)
-      local-endpoint ("AddOne.js")
-    }
+//    action-endpoint (ActionAddOne) {
+//      accepted-inputs (id)
+//      local-endpoint ("AddOne.js")
+//    }
     // test DELETE
-    action-endpoint (ActionDeleteOne) {
-      accepted-inputs (id)
-      local-endpoint ("DeleteOne.js")
-    }
+//    action-endpoint (ActionDeleteOne) {
+//      accepted-inputs (id)
+//      local-endpoint ("DeleteOne.js")
+//    }
   }
 }

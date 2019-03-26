@@ -1,0 +1,11 @@
+action (ActionFindAlbumByArtist) {
+  description (return a list of StructAlbum based on input Artist id)
+  type (Search)
+  collect {
+    input (artist_id) {
+      type (TypeArtistID)
+      min (Required) max (One)
+    }
+  }
+  output (StructAlbum)
+}

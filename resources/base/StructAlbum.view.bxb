@@ -15,19 +15,29 @@ result-view {
   }
   render {
     if (size(this)==1) {
-      // detailed playlist view with each track listed
+      // detailed view with each track listed
       layout {
         section {
           content {
-            single-line {
-              image {
-                url ("https://github.com/MinChengVivLabs/example.musicApp/blob/master/2C.jpg?raw=true")
-                style (Title_M)
+            image-card {
+              image-object-fit (Contain)
+              image-url("#{value(this.imageUrl)}")
+              title-area {
+                halign (Start)
+                slot1 {
+                  text {
+                    style(Title_M)
+                    value ("Title: #{value(this.albumID)} #{value(this.albumTitle)}")
+                  }
+                }
+                slot2 {
+                  paragraph {
+                    value ("Artist: #{value(this.artistID)} #{value(this.artistName)}")
+                    style (Title_S)
+                  }
+                }
               }
-              text {
-                value ("#{value(this.albumTitle)}")
-                style (Detail_L)
-              }
+              // on-click
             }
           }
         }
@@ -45,6 +55,17 @@ result-view {
             }
           }
         }
+      }
+    }
+  }
+  // end of render
+  conversation-drivers {
+    if (size(this)==1) {
+      conversation-driver {
+        template ("Find tracks in album #{value(this.albumID)}")
+      }
+      conversation-driver {
+        template ("Find artist #{value(this.artistID)}")
       }
     }
   }

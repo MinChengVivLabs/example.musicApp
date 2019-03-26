@@ -1,0 +1,10 @@
+train (t-2hekpbtp1b0wch4z4515c1kmq) {
+  utterance ("[g:ActionGetTrackInfo] tracks in album id (5)[v:TypeAlbumID:5]")
+  plan (Y2BmkEmtSMwtyEnVyy0tzkx2LCjQCy4pKk0uCSlKTM5mUMaQdUwuyczPc0+FKPDMS8vHYkRIZUGqY05Saa6nCwMTAyMQMwBJRgYQgPIB)
+  last-modified (1553547079745)
+}
+train (t-2rtdq6h7dqy63sv5q2pi1xw45) {
+  utterance ("[g:ActionFindAlbumByArtist] find album with artist (100)[v:TypeArtistID]")
+  plan (Y2BmkEmtSMwtyEnVyy0tzkx2LCjQCy4pKk0uccxJKs1l0MCQdUwuyczPc8vMSwGrcKp0LCrJLC5hkMVQGVJZkAqR9HRhYGJgBGIGIMnIAAJQPgA=)
+  last-modified (1553634622153)
+}

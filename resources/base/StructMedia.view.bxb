@@ -10,7 +10,7 @@ result-view {
       template ("Found Media ID #{value(this.mediaID)}")
     }
     else {
-      template ("Found #{size(this)} Genre types")
+      template ("Found #{size(this)} Media types")
     }
   }
   render {

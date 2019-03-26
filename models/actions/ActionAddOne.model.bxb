@@ -2,8 +2,8 @@ action (ActionAddOne) {
   description (test add using POST)
   type (Search)
   collect {
-    input (id) {
-      type (TypeMediaID)
+    input (album) {
+      type (StructAlbum)
       min (Optional) max (One)
     }
   }

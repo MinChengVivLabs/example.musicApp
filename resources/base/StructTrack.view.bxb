@@ -1,34 +1,30 @@
 result-view {
   match {
-    StructArtist(this)
+    StructTrack(this)
   }
   message {
     if (size(this) == 0) {
       template ("Sorry, I found nothing.")
     }
     else-if (size(this)==1) {
-      template ("Found Artist ID #{value(this.artistID)}")
+      template ("Found Track ID #{value(this.trackID)}")
     }
     else {
-      template ("Found #{size(this)} Artists")
+      template ("Found #{size(this)} tracks")
     }
   }
   render {
     if (size(this)==1) {
-      // detailed view with image 
+      // detailed view 
       layout {
         section {
           content {
-            image-card {
-              image-object-fit (Contain)
-              image-url("#{value(this.imageUrl)}")
-              title-area {
-                halign (Start)
-                slot1 {
-                  text {
-                    style(Title_L)
-                    value ("#{value(this.artistName)}")
-                  }
+            cell-card {
+              slot2 {
+                content {
+                  order (PrimarySecondary)
+                  primary ("#{value(this.trackName)} -- #{value(this.albumTitle)}")
+                  secondary("#{value(this.bytes)} bytes -- $#{value(this.unitPrice)}")
                 }
               }
             }
@@ -37,14 +33,15 @@ result-view {
       }
     }
     else {
+      // summary view 
       list-of (this) {
         where-each (item) {
           layout-macro (MacroList) {
             param (id) {
-              expression (item.artistID)
+              expression (item.trackID)
             }
             param (name) {
-              expression (item.artistName)
+              expression (item.trackName)
             }
           }
         }
@@ -55,8 +52,8 @@ result-view {
   conversation-drivers {
     if (size(this)==1) {
       conversation-driver {
-        template ("Find all album with artist #{value(this.artistID)}")
+        template ("Find album #{value(this.albumID)}")
       }
     }
-  }
+  }  
 }

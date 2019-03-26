@@ -15,4 +15,15 @@ structure (StructAlbum) {
     type (TypeArtistID)
     min (Required) max (One)
   }
+  property (imageUrl) {
+    // image url by JS assignment 
+    type (TypeUrl)
+    min (Required) max (One)
+  }
+  property (artistName) {
+    // by search in detail mode
+    type (TypeArtistName)
+    min (Optional) max (One)
+    lazy-source (ActionGetArtistName)
+  }
 }

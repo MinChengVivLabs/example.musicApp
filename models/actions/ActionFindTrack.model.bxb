@@ -4,7 +4,7 @@ action (ActionFindTrack) {
   collect {
     input (track_id) {
       type (TypeTrackID)
-      min (Required) max (One)
+      min (Optional) max (One)
     }
   }
   output (StructTrack)

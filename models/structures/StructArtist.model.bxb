@@ -10,4 +10,9 @@ structure (StructArtist) {
     type (TypeArtistName)
     min (Required) max (One)
   }
+  property (imageUrl) {
+    // image url by JS assignment 
+    type (TypeUrl)
+    min (Required) max (One)
+  }
 }

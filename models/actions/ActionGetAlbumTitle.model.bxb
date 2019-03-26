@@ -1,0 +1,11 @@
+action (ActionGetAlbumTitle) {
+  description (fetch album title from input track object)
+  type (Fetch)
+  collect {
+    input (track) {
+      type (StructTrack)
+      min (Optional) max (One)
+    }
+  }
+  output (TypeAlbumTitle)
+}

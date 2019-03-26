@@ -1,3 +1,8 @@
+train (t-lf2fzflbjrbs49upeiiee0g8q) {
+  utterance ("[g:ActionGetTrackInfo] Tracks in album (5)[v:TypeAlbumID]")
+  plan (Y2BmkEmtSMwtyEnVyy0tzkx2LCjQCy4pKk0uCSlKTM5mUMaQdUwuyczPc0+FKPDMS8vHYkRIZUGqY05Saa6nCwMTAyMQMwBJRgYQgPIB)
+  last-modified (1553546620460)
+}
 train (t-ltzbq894oub8fx3rrlmsdhcnp) {
   utterance ("[g:ActionFindGenre] find genre (5)[v:TypeGenreID]")
   plan (Y2BmkEmtSMwtyEnVyy0tzkx2LCjQCy4pKk0ucU/NK0plUMCQdUwuyczPc8vMS4GowNQfUlmQCpbzdGFgYmAEYgYgycgAAlA+AA==)

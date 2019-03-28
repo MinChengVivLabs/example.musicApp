@@ -63,5 +63,10 @@ endpoints {
 //      accepted-inputs (id)
 //      local-endpoint ("DeleteOne.js")
 //    }
+    // select-min end point 
+    action-endpoint (ActionWhoIsSimon) {
+      accepted-inputs (simon)
+      local-endpoint ("WhoIsSimon.js")
+    }
   }
 }

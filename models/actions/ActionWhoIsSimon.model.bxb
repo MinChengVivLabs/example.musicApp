@@ -1,0 +1,24 @@
+action (ActionWhoIsSimon) {
+  description (a default action with select-min)
+  type (Calculation)
+  collect {
+    input (simon) {
+      type (TypeID)
+      min (Required) max (One)
+      default-select {
+        with-rule {
+          select-min {
+            expression (simon)
+          }
+        }
+      }
+      default-init {
+        intent {
+          goal: TypeID
+          value: TypeID(777)
+        }
+      }
+    }
+  }
+  output (TypeText)
+}

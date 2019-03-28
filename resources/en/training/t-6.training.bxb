@@ -1,0 +1,5 @@
+train (t-6jukeiafn10pi7l89kjhwa1va) {
+  utterance ("[g:ActionWhoIsSimon] Who is Simon from (100)[v:TypeID] (200)[v:TypeID] (300)[v:TypeID]")
+  plan (Y2BjkEytSMwtyEnVyy0tzkx2LCjQC6ksSA1JrShhUMSQckwuyczPC8/I9ywOzszNz2MQx6rb04WaEqwMjAxMDMwMLEAWA5gNgoxANg8YMgBlGIHyrECaAQA=)
+  last-modified (1553640166759)
+}
